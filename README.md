@@ -2,7 +2,7 @@
 
 ## This project calculate Total Expenses And It calculate Total Amount of different categories.such as Total Food Amount , Total Rent Amount ,Total Entertainmet Amount And Total Health Amount
 
-## Features
+
 ✅ Add the data to dataBase 
 ✅ calculate Total Expenses
 ✅ calculate Total Food Expenses and Precentage
