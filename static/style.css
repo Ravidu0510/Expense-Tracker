@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.head_content {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #fccc20;
+}
+.alert {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+.alert-danger {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+.head_content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: "STXinwei";
+  color: #211a5c;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.head_content form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  padding: 10px;
+  height: 15%;
+}
+.head_content label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 05px;
+  padding: 05px;
+  font-family: Berlin Sans FB;
+  font-size: 20px;
+  color: #211a5c;
+}
+.head_content input {
+  margin: 02px;
+  padding: 02px;
+  border: solid 2px #211a5c;
+  border-radius: 10px;
+  text-align: center;
+}
+.head_content input:active,
+input:focus {
+  border: solid 3px #211a5c;
+  outline: none;
+}
+
+.head_content select {
+  border-radius: 10px;
+  padding: 10px;
+  border: solid 2px #211a5c;
+  text-align: center;
+}
+
+.head_content button {
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #211a5c;
+  transition: all 1s ease;
+}
+button:hover {
+  background-color: #fff;
+  border: solid 3px #211a5c;
+  color: #211a5c;
+}
+
+.body_content {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70%;
+  top: 28%;
+  border-radius: 60px 60px 0px 0px;
+  background: #ffffff;
+  box-shadow: 15px 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tot_card {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 10%;
+  left: 23%;
+  width: 310px;
+  height: 180px;
+  background: #2452ec;
+  border-radius: 20px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.tot_card:hover {
+  transform: scale(0.95);
+}
+
+.tot_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: Berlin Sans FB;
+  font-size: 40px;
+  font-weight: 100;
+}
+.tot_card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 25px;
+}
+.progres {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  width: 370px;
+  height: 230px;
+  top: 4.5%;
+  left: 50%;
+  background: rgba(181, 179, 179, 0.165);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  opacity: 100%;
+  fill-opacity: 0%;
+  transition: all 0.3s ease;
+  border: solid 3px #211a5c;
+}
+.food_bar {
+  accent-color: #119b57;
+}
+.rent_bar {
+  accent-color: #3360f8;
+}
+.ent_bar {
+  accent-color: #dc1c7a;
+}
+.health_bar {
+  accent-color: #7248dd;
+}
+.progres:hover {
+  transform: scale(0.95);
+}
+.progres h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #211a5c;
+}
+.progres label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+.progres progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  width: 330px;
+  height: 20px;
+}
+
+.food_card {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 60%;
+  left: 10%;
+  width: 240px;
+  height: 150px;
+  background: #119b57;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.food_card:hover {
+  transform: scale(0.95);
+}
+.food_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: Berlin Sans FB;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.food_card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+}
+
+.rent_card {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  top: 60%;
+  left: 30%;
+  width: 240px;
+  height: 150px;
+  background-color: #3360f8;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.rent_card:hover {
+  transform: scale(0.95);
+}
+.rent_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: Berlin Sans FB;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.rent_card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+}
+
+.ent_card {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dc1c7a;
+  width: 240px;
+  height: 150px;
+  top: 60%;
+  left: 50%;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.ent_card:hover {
+  transform: scale(0.95);
+}
+.ent_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: Berlin Sans FB;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.ent_card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+}
+.health_card {
+  position: absolute;
+  margin: 10px;
+  padding: 10px;
+  background: #7248dd;
+  top: 60%;
+  left: 70%;
+  width: 240px;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 10px 15px 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.health_card:hover {
+  transform: scale(0.95);
+}
+
+.health_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: Berlin Sans FB;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.health_card h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+}

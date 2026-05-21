@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <title>Expense Traker</title>
+  </head>
+  <body>
+    <div class="head_content">
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %} {% endif %} {% endwith %}
+      <h1>Expense Tracker</h1>
+      <form method="POST" action="/submit">
+        <label> Cost Name </label>
+        <input type="text" name="name" placeholder="  Enter Name" required />
+        <label> Cost Category </label>
+        <select name="category" required>
+          <option>Food</option>
+          <option>Rent</option>
+          <option>Enterinment</option>
+          <option>Health</option>
+        </select>
+        <label>Price </label>
+        <input type="text" name="cost" required placeholder="  Enter Coast" />
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+    <div class="body_content">
+      <div class="tot_card">
+        <h3>Total</h3>
+        <h5>${{total_exp}}</h5>
+      </div>
+      <div class="progres">
+        <h3>Summary</h3>
+        <label>{{food_bar}}%</label
+        ><progress value="{{food_bar}}" max="100" class="food_bar"></progress>
+        <label>{{rent_bar}}%</label
+        ><progress value="{{rent_bar}}" max="100" class="rent_bar"></progress>
+        <label>{{ent_bar}}%</label
+        ><progress value="{{ent_bar}}" max="100" class="ent_bar"></progress>
+        <label>{{health_bar}}%</label
+        ><progress
+          value="{{health_bar}}"
+          max="100"
+          class="health_bar"
+        ></progress>
+      </div>
+      <div class="food_card">
+        <h3>Food</h3>
+        <h5>${{tot_food}}</h5>
+      </div>
+      <div class="rent_card">
+        <h3>Rent</h3>
+        <h5>${{tot_rent}}</h5>
+      </div>
+      <div class="ent_card">
+        <h3>Entertainment</h3>
+        <h5>${{tot_ent}}</h5>
+      </div>
+      <div class="health_card">
+        <h3>Health</h3>
+        <h5>${{tot_health}}</h5>
+      </div>
+    </div>
+  </body>
+</html>
